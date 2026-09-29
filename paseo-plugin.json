@@ -1,0 +1,6 @@
+{
+  "id": "paseo-open-edits",
+  "requirements": {
+    "paseo": ">=0.10.1"
+  }
+}

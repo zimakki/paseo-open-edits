@@ -1,0 +1,40 @@
+{
+  "name": "paseo-open-edits",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "paseo-plugin.json",
+    "index.client.tsx",
+    "client/",
+    "shared/"
+  ],
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts",
+    "format": "oxfmt .",
+    "format:files": "oxfmt",
+    "format:check": "oxfmt --check .",
+    "format:check:files": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "knip": "knip",
+    "check": "npm run format:check && npm run lint && npm run knip && npm run typecheck && npm test",
+    "prepare": "lefthook install"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.9.2",
+    "@types/react": "~19.2.0",
+    "knip": "^5.88.1",
+    "lefthook": "^2.1.14",
+    "oxfmt": "0.46.0",
+    "oxlint": "1.61.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
