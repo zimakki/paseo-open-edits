@@ -2,8 +2,9 @@
 
 A Paseo plugin that opens Edit and Write tool rows in the agent chat on their own, by clicking
 Paseo's own row headers. It is not published to npm or paseo.cafe. The source is public at
-https://github.com/zimakki/paseo-open-edits. It is a sibling of paseo-inkwell-chat, which colors
-the same rows. Neither plugin depends on the other.
+https://github.com/zimakki/paseo-open-edits. It is a sibling of
+[paseo-inkwell-chat](https://github.com/zimakki/paseo-inkwell-chat), which colors the same rows.
+Neither plugin depends on the other.
 
 - `README.md` explains what it opens, how it works, and the Paseo DOM hooks it depends on.
 - Run `npm run check` before committing. The lefthook pre-commit hook runs the same checks.
